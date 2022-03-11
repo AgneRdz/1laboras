@@ -2,6 +2,7 @@ package com.example.a1laboras;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -17,5 +18,10 @@ public class MainActivity extends AppCompatActivity {
     public void onBtnMainClick(View view) {
         TextView tvMain = (TextView)findViewById(R.id.tvMain);
         tvMain.setText("smth new");
+    }
+
+    public void onBtnColorClick(View view) {
+        TextView tvMain = (TextView) findViewById(R.id.tvMain);
+        tvMain.setTextColor(Color.parseColor("#FF0000"));
     }
 }
